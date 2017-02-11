@@ -1,0 +1,11 @@
+Metrics/LineLength:
+  Max: 100
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Documentation:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.2
