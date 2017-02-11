@@ -6,19 +6,11 @@ class Worker
   end
 
   def tick
-
   end
 
   def push
-
   end
 
   def pop
-
   end
-
 end
-
-
-
-
