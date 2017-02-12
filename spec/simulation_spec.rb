@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 describe Simulation do
-  it 'has 10 lines of output' do
-    output = mock_io('') { Simulation.new(length: 10).run }
+  it 'has 20 lines of output' do
+    output = mock_io('') do
+      Simulation.new(length: 20).register_worker(2).run
+    end
     puts output
-    expect(output.split("\n").count).to eq(10)
+    expect(output.split("\n").count).to eq(20)
   end
 end

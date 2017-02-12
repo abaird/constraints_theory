@@ -12,3 +12,9 @@ ensure
   $stdin = old_stdin
   $stdout = old_stdout
 end
+
+RSpec::Matchers.define :have_empty_queues do
+  match do |subject|
+    subject.is_a?(Worker) && subject.input_length == 0 && subject.input_length == 0
+  end
+end
